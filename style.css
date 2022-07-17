@@ -152,7 +152,11 @@ body {
     }
     
     .hero {
-        margin: 0 auto 50px;
+        margin: 0 auto;
+    }
+
+    .sidebar {
+        padding-top: 1.5rem;
     }
 
 }
