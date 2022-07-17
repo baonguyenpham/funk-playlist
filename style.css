@@ -152,7 +152,7 @@ body {
     }
     
     .hero {
-        margin: 0;
+        margin: 0 auto 50px;
     }
 
 }
