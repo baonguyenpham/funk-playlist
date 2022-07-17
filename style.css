@@ -130,6 +130,10 @@ body {
     .hero h1 {
         text-align: center;
     }
+    
+    .youtube {
+        padding: 1rem 0 3rem;
+    }
 
 }
 
