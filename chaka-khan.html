@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Funk Music Playlist</title>
+</head>
+<body>
+   <div class="hero" id="containerMain">
+    <h1>Funk Music Playlist</h1>
+    <div class="container" >
+        <div class="feature-img">
+            <img src="images/chaka.jpg" alt="chaka-khan" width="100%">
+            <img src="images/play.png" alt="play button" class="play-btn"
+                    onclick="playAudio('')" >
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-item">
+                <div class="sidebar-img">
+                    <img src="images/miles-davies.jpg" alt="miles-davies" width="100%" class="thumbnail">
+                    <a href="miles-davis.html"><img src="images/play.png" alt="play button" class="play-btn small"></a>
+                </div>
+
+                <p>Miles Davies <br> <span class="song">(5 songs)</span></p>
+            </div>
+            <div class="sidebar-item">
+                <div class="sidebar-img">
+                    <img src="images/michael-jackson.jpg" alt="michael-jackson" width="100%" class="thumbnail">
+                    <a href="michael-jackson.html"><img src="images/play.png" alt="play button" class="play-btn small"></a>
+                </div>
+                <p>Michael Jackson <br> <span class="song">(8 songs)</span></p>
+            </div>
+            <div class="sidebar-item">
+                <div class="sidebar-img">
+                    <img src="images/james-brown.jpg" alt="" width="100%" class="thumbnail">
+                    <a href="index.html"><img src="images/play.png" alt="play button" class="play-btn small"></a>
+                </div>
+                <p>James Brown <br> <span class="song">(6 songs)</span></p>
+            </div>
+            <div class="siderbar-item">
+                <a href="https://youtube.com/playlist?list=PL-xaGXyDUTwDQY3eEZw766Z1m9Cd50E6j" target="_blank" ><button class="youtube"><i class="fa fa-youtube"></i> Favorites  </button></a>
+            </div>
+        </div>
+
+        
+    </div>
+   </div>
+
+   <div class="audio-player" id="audioPlayer">
+        <div class="box-wrap">
+            <iframe width="100%" height="350" id="myAudio" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1469295823&color=%23008080&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/naomi-pham-508923092" title="Naomi Pham" target="_blank" style="color: #cccccc; text-decoration: none;">Naomi Pham</a> · <a href="https://soundcloud.com/naomi-pham-508923092/sets/chaka-khan" title="Chaka Khan" target="_blank" style="color: #cccccc; text-decoration: none;">Chaka Khan</a></div>
+            <img src="images/close.png" alt="close button" class="close-btn"
+            onclick="stopAudio()" >
+            <div class="artist-detail">
+                <h2>Chaka Khan</h2>
+                <div class="artist-wiki"><q>an American singer and songwriter. Her career has spanned more than five decades, beginning in the 1970s as the lead vocalist of the funk band Rufus. Known as the "Queen of Funk",[1] Khan was the first R&B artist to have a crossover hit featuring a rapper, with "I Feel for You" in 1984.[2] Khan has won ten Grammy Awards and has sold an estimated 70 million records worldwide. ... </q></div>
+                <br><a href="https://en.wikipedia.org/wiki/Chaka_Khan" target="_blank" >Read more on Wikipedia</a>
+            </div>
+        </div>
+   </div>
+
+   <script>
+        var audioPlayer = document.getElementById("audioPlayer");
+        var myAudio = document.getElementById("myAudio")
+        var containerMain = document.getElementById("containerMain")
+
+
+
+        function stopAudio() {
+            audioPlayer.style.display = "none";
+            containerMain.style.display = "";
+        }
+
+        function playAudio() {
+            audioPlayer.style.display = "inline-block";
+            containerMain.style.display ="none";
+        }
+
+   </script>
+
+</body>
