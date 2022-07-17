@@ -134,6 +134,10 @@ body {
     .youtube {
         padding: 1rem 0 3rem;
     }
+    
+    .audio-player {
+        margin-top: 8%;
+    }
 
 }
 
